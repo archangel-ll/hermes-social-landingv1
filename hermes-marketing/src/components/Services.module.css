@@ -1,0 +1,231 @@
+.section {
+  padding: 6rem 4rem;
+  background: var(--dark2);
+}
+
+.sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.sectionLabel::before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.75rem;
+}
+
+.title em {
+  font-family: "DM Serif Display", serif;
+  font-style: italic;
+  color: var(--gold);
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 1rem;
+  max-width: 480px;
+  margin-bottom: 3rem;
+}
+
+/* One-off cards */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+
+.card {
+  background: var(--dark2);
+  padding: 2.5rem 1.75rem;
+  transition: background 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  background: var(--dark3);
+}
+
+.card:hover::before {
+  transform: scaleX(1);
+}
+
+.icon {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 1.25rem;
+}
+
+.name {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.desc {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.price {
+  margin-top: 1.25rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.6rem;
+  color: var(--gold);
+}
+
+/* Retainer cards */
+.retainerGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+
+.retainer {
+  background: var(--dark2);
+  padding: 2.5rem 2rem;
+  position: relative;
+  transition: background 0.2s;
+}
+
+.retainer:hover {
+  background: var(--dark3);
+}
+
+.featured {
+  background: var(--dark3);
+  border-top: 3px solid var(--gold);
+}
+
+.tier {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+}
+
+.retainerPrice {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 4rem;
+  color: var(--white);
+  line-height: 1;
+  margin-bottom: 0.2rem;
+}
+
+.retainerPrice sup {
+  font-size: 1.8rem;
+  vertical-align: super;
+}
+
+.perMonth {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+.features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-bottom: 2rem;
+}
+
+.features li {
+  font-size: 0.85rem;
+  color: var(--muted);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  line-height: 1.4;
+}
+
+.check {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  border: 1px solid var(--gold-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6rem;
+  color: var(--gold);
+  background: rgba(201, 168, 76, 0.08);
+}
+
+.cta {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0.9rem;
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.ctaOutline {
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.ctaOutline:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.ctaSolid {
+  background: var(--gold);
+  color: var(--black);
+  border: none;
+}
+
+.ctaSolid:hover {
+  background: var(--gold-light);
+}
+
+@media (max-width: 1024px) {
+  .section { padding: 4rem 1.5rem; }
+  .cardGrid { grid-template-columns: 1fr 1fr; }
+  .retainerGrid { grid-template-columns: 1fr; }
+}

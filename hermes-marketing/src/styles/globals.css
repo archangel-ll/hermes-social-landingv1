@@ -1,0 +1,50 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --gold: #C9A84C;
+  --gold-light: #E8C97A;
+  --gold-dim: rgba(201, 168, 76, 0.15);
+  --black: #080806;
+  --dark: #0f0f0c;
+  --dark2: #181814;
+  --dark3: #222220;
+  --white: #F5F2EA;
+  --muted: #6A6A60;
+  --border: rgba(201, 168, 76, 0.18);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--black); }
+::-webkit-scrollbar-thumb { background: var(--gold); }
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fu { opacity: 0; animation: fadeUp 0.8s ease forwards; }
+.d1 { animation-delay: 0.12s; }
+.d2 { animation-delay: 0.28s; }
+.d3 { animation-delay: 0.44s; }
+.d4 { animation-delay: 0.6s; }

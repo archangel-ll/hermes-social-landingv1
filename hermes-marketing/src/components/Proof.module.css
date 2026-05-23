@@ -1,0 +1,135 @@
+.section {
+  padding: 6rem 4rem;
+  border-top: 1px solid var(--border);
+}
+
+.sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.sectionLabel::before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.75rem;
+}
+
+.title em {
+  font-family: "DM Serif Display", serif;
+  font-style: italic;
+  color: var(--gold);
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 1rem;
+  max-width: 480px;
+  margin-bottom: 3rem;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  margin-bottom: 4rem;
+}
+
+.statCard {
+  background: var(--dark);
+  padding: 2.25rem;
+  transition: background 0.2s;
+}
+
+.statCard:hover {
+  background: var(--dark2);
+}
+
+.statValue {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 4rem;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.statLabel {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 0.25rem;
+}
+
+.statDesc {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.addOnTitle {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.addOnGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+
+.addOnCard {
+  background: var(--dark);
+  padding: 1.5rem 1.25rem;
+  transition: background 0.2s;
+}
+
+.addOnCard:hover {
+  background: var(--dark2);
+}
+
+.addOnPrice {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.6rem;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+
+.addOnName {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 0.2rem;
+}
+
+.addOnDesc {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+@media (max-width: 1024px) {
+  .section { padding: 4rem 1.5rem; }
+  .statsGrid { grid-template-columns: 1fr 1fr; }
+  .addOnGrid { grid-template-columns: 1fr 1fr; }
+}
