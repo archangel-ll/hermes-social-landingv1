@@ -24,8 +24,7 @@ export function StrategyLeft() {
   return (
     <div className={styles.split}>
       <div className={styles.visual}>
-        {/* Replace with: <img src="/assets/strategy.jpg" alt="Strategy" loading="lazy" /> */}
-        <div className={styles.imagePlaceholder} />
+        <img src="/assets/img-10.png" alt="Strategy" loading="lazy" className={styles.imagePlaceholder} />
         <div className={styles.overlayRight} />
       </div>
       <div className={styles.content}>
@@ -71,8 +70,7 @@ export function MindsetRight() {
         <a href={CAL_LINK} className={styles.btnGold}>Start Your Campaign</a>
       </div>
       <div className={styles.visual}>
-        {/* Replace with: <img src="/assets/above-clouds.jpg" alt="Above the clouds" loading="lazy" /> */}
-        <div className={styles.imagePlaceholder} />
+        <img src="/assets/img-11.png" alt="Above the clouds" loading="lazy" className={styles.imagePlaceholder} />
         <div className={styles.overlayLeft} />
       </div>
     </div>

@@ -4,23 +4,23 @@ import styles from './Showcase.module.css'
 // Replace src values with real paths after extracting base64 assets
 // Run: npm run extract-assets  (see README)
 const showcaseImages: ShowcaseImage[] = [
-  { src: '/assets/img-1.jpg', alt: 'Fashion Editorial', tag: 'Fashion Editorial' },
-  { src: '/assets/img-2.jpg', alt: 'Cinematic Hook', tag: 'Cinematic Hook' },
-  { src: '/assets/img-3.jpg', alt: 'Brand Promo', tag: 'Brand Promo' },
-  { src: '/assets/img-4.jpg', alt: 'Lifestyle Content', tag: 'Lifestyle Content' },
-  { src: '/assets/img-5.jpg', alt: 'Luxury Portrait', tag: 'Luxury Portrait' },
+  { src: '/assets/img-1.png', alt: 'Fashion Editorial', tag: 'Fashion Editorial' },
+  { src: '/assets/img-2.png', alt: 'Cinematic Hook', tag: 'Cinematic Hook' },
+  { src: '/assets/img-3.png', alt: 'Brand Promo', tag: 'Brand Promo' },
+  { src: '/assets/img-4.png', alt: 'Lifestyle Content', tag: 'Lifestyle Content' },
+  { src: '/assets/img-5.png', alt: 'Luxury Portrait', tag: 'Luxury Portrait' },
 ]
 
 const showcaseImages2: ShowcaseImage[] = [
-  { src: '/assets/img-6.jpg', alt: 'Creative Direction', tag: 'Creative Direction' },
-  { src: '/assets/img-7.jpg', alt: 'Brand Exposure', tag: 'Brand Exposure' },
-  { src: '/assets/img-8.jpg', alt: 'Content Creation', tag: 'Content Creation' },
-  { src: '/assets/img-9.jpg', alt: 'Agency Operations', tag: 'Agency Operations' },
+  { src: '/assets/img-6.jpeg', alt: 'Creative Direction', tag: 'Creative Direction' },
+  { src: '/assets/img-7.jpeg', alt: 'Brand Exposure', tag: 'Brand Exposure' },
+  { src: '/assets/img-8.jpeg', alt: 'Content Creation', tag: 'Content Creation' },
+  { src: '/assets/img-9.jpeg', alt: 'Agency Operations', tag: 'Agency Operations' },
 ]
 
 const showcaseVideos: ShowcaseVideo[] = [
-  { src: '/assets/video-1.mp4', tag: 'Viral Results' },
-  { src: '/assets/video-2.mp4', tag: 'Studio Showcase' },
+  { src: '/assets/video-2.mp4', tag: 'Viral Results' },
+  { src: '/assets/video-1.mp4', tag: 'Studio Showcase' },
   {
     src: 'https://d8j0ntlcm91z4.cloudfront.net/user_3DlOJMzWsswXAXi4iPfzKfLdNcp/hf_20260522_212236_9a43ee70-75ab-46b4-8618-4d9a99f097db.mp4',
     tag: 'Brand Hook',

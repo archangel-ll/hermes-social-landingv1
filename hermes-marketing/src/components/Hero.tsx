@@ -12,8 +12,7 @@ export default function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.videoBg}>
-        {/* Replace with: <video autoPlay muted loop playsInline src="/assets/hero-bg.mp4" /> */}
-        <div className={styles.videoPlaceholder} />
+        <video autoPlay muted loop playsInline src="/assets/video-1.mp4" className={styles.videoPlaceholder} />
       </div>
 
       <div className={styles.content}>

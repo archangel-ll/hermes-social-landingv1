@@ -6,8 +6,7 @@ export default function CTA() {
   return (
     <section className={styles.section} id="book">
       <div className={styles.videoBg}>
-        {/* Replace with: <video autoPlay muted loop playsInline src="/assets/cta-bg.mp4" /> */}
-        <div className={styles.videoPlaceholder} />
+        <video autoPlay muted loop playsInline src="/assets/video-2.mp4" className={styles.videoPlaceholder} />
       </div>
       <div className={styles.overlay} />
       <div className={styles.content}>
