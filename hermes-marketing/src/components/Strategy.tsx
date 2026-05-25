@@ -24,7 +24,13 @@ export function StrategyLeft() {
   return (
     <div className={styles.split}>
       <div className={styles.visual}>
-        <img src="/assets/img-10.png" alt="Strategy" loading="lazy" className={styles.imagePlaceholder} />
+        <video
+          src="/assets/hf_20260522_211636_9bc1fb99-fe10-42c8-bef8-42f93672d23c.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
         <div className={styles.overlayRight} />
       </div>
       <div className={styles.content}>
@@ -70,7 +76,13 @@ export function MindsetRight() {
         <a href={CAL_LINK} className={styles.btnGold}>Start Your Campaign</a>
       </div>
       <div className={styles.visual}>
-        <img src="/assets/img-11.png" alt="Above the clouds" loading="lazy" className={styles.imagePlaceholder} />
+        <video
+          src="/assets/hf_20260522_210817_84c49059-f642-4122-8e9e-425fed65ccb0.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
         <div className={styles.overlayLeft} />
       </div>
     </div>
